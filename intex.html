@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Prompt Generator</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <div class="logo-icon">✦</div>
+                <span>Prompt<span class="highlight">Craft</span></span>
+            </div>
+
+            <div class="header-tag">
+                AI Prompt Builder
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-badge">✦ SMART PROMPT GENERATOR</div>
+
+            <h1>Create Better Prompts.<br>
+                <span>Get Better Results.</span>
+            </h1>
+
+            <p>
+                Build clear and effective AI prompts in seconds.
+                Designed especially for college students.
+            </p>
+        </section>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Input Section -->
+            <section class="form-card">
+
+                <div class="section-heading">
+                    <div>
+                        <h2>Build Your Prompt</h2>
+                        <p>Fill in the details below to create your prompt.</p>
+                    </div>
+                    <span class="step-label">STEP 01</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="role">01. Role</label>
+                    <p>Who should the AI act as?</p>
+                    <input
+                        type="text"
+                        id="role"
+                        placeholder="e.g. Act as an expert computer science teacher"
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="task">02. Task</label>
+                    <p>What do you want the AI to do?</p>
+                    <textarea
+                        id="task"
+                        placeholder="e.g. Explain machine learning concepts..."
+                    ></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label for="context">03. Context</label>
+                    <p>Provide additional background information.</p>
+                    <textarea
+                        id="context"
+                        placeholder="e.g. I am a second-year college student..."
+                    ></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label for="constraints">04. Constraints</label>
+                    <p>Set rules or limitations for the response.</p>
+                    <textarea
+                        id="constraints"
+                        placeholder="e.g. Use simple English, avoid technical jargon..."
+                    ></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label for="format">05. Output Format</label>
+                    <p>How should the AI present the answer?</p>
+
+                    <select id="format">
+                        <option value="">Select output format</option>
+                        <option value="Bullet points">Bullet Points</option>
+                        <option value="Paragraphs">Paragraphs</option>
+                        <option value="Step-by-step explanation">Step-by-step Explanation</option>
+                        <option value="Table">Table</option>
+                        <option value="Numbered list">Numbered List</option>
+                        <option value="Detailed report with headings">Detailed Report</option>
+                    </select>
+                </div>
+
+                <!-- Buttons -->
+                <div class="button-group">
+                    <button class="generate-btn" id="generateBtn">
+                        ✦ Generate Prompt
+                    </button>
+
+                    <button class="clear-btn" id="clearBtn">
+                        Clear All
+                    </button>
+                </div>
+
+            </section>
+
+            <!-- Output Section -->
+            <section class="output-card">
+
+                <div class="section-heading">
+                    <div>
+                        <h2>Your Generated Prompt</h2>
+                        <p>Your structured AI prompt will appear here.</p>
+                    </div>
+                    <span class="step-label">STEP 02</span>
+                </div>
+
+                <div class="output-box">
+                    <div class="output-header">
+                        <span>✦ GENERATED OUTPUT</span>
+                        <span class="status">● Ready</span>
+                    </div>
+
+                    <div id="output" class="output-text">
+                        <div class="empty-state">
+                            <div class="empty-icon">✧</div>
+                            <h3>Your prompt will appear here</h3>
+                            <p>
+                                Fill in the fields and click
+                                Generate Prompt to get started.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="copy-btn" id="copyBtn">
+                    ▢ Copy Prompt
+                </button>
+
+                <p id="message" class="message"></p>
+
+                <!-- Sample Prompt -->
+                <div class="sample-card">
+                    <div class="sample-title">
+                        <span>💡</span>
+                        <h3>Need inspiration?</h3>
+                    </div>
+
+                    <p>
+                        Explore a sample prompt to understand how
+                        effective prompts are structured.
+                    </p>
+
+                    <button id="sampleBtn" class="sample-btn">
+                        View Sample Prompt →
+                    </button>
+                </div>
+
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>Made for students, powered by creativity. ✦</p>
+            <span>AI Prompt Generator © 2026</span>
+        </footer>
+
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>
